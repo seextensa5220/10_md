@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content">
+        <h1>Shop</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sit
+          necessitatibus aut voluptatum praesentium quos repellendus, voluptate
+          harum cupiditate numquam voluptatibus, porro repudiandae, magnam
+          exercitationem aliquid vitae libero nemo? Voluptates!</p>
+        <img src="https://fakestoreapi.com/icons/logo2.png">
+      
+        <form>
+          <label for="title">Название товара:</label>
+          <input type="text" id="title" name="title">
+          <label for="price">Цена:</label>
+          <input type="number" id="price" name="price">
+          <label for="description">Описание:</label>
+          <textarea id="description" name="description"></textarea>
+          <label for="category">Категория:</label>
+          <input type="text" id="category" name="category">
+          <button id="addBtn" class="addBtn">Добавить товар</button>
+        </form>
+        <form>
+          <select id="myCategory" onchange="change()">
+            <option>myCategory</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Jewelery">Jewelery</option>
+            <option value="Men">Men's clothing</option>
+            <option value="Women">Women's clothing</option>
+          </select>
+        </form>
+      </div>
+      <div id="productList">
+      </div>
+      <div id="pagination">
+      </div>
+    </div>
+    <script src="./scrypt.js"></script>
+  </body>
+
+</html>
